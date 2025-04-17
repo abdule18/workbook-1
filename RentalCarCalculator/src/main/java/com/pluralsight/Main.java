@@ -66,11 +66,10 @@ public class Main {
         double optionalCost = tollCost + gpsCost + roadsideCost;
         double surcharge = 0;
 
-        double totalCost = basicCarRental +  optionalCost + surcharge;
-
         if (age < 25){
             surcharge = basicCarRental * 0.30;
         }
+        double totalCost = basicCarRental +  optionalCost + surcharge;
 
         System.out.println("The cost of your basic Car rental price is $" + basicCarRental);
         System.out.println("The cost of your Optional cost is $" + optionalCost);
