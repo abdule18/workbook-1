@@ -20,15 +20,19 @@ public class Main {
         String secondChoice = scanner.nextLine();
 
         double price;
+        double regularLoaded = 1.00;
+        double largeLoaded = 1.75;
+        double regularPrice = 5.45;
+        double largePrice = 8.95;
 
         if (choice == 1 && secondChoice.equals("yes")){
-            price = 6.45;
+            price = regularPrice += regularLoaded;
         } else if(choice == 2 && secondChoice.equals("yes")){
-            price = 10.07;
+            price = largePrice += largeLoaded;
         } else if (choice == 1 && secondChoice.equals("no")){
-            price = 5.45;
+            price = regularPrice;
         } else if (choice == 2 && secondChoice.equals("no")){
-            price = 8.95;
+            price = largePrice;
         } else {
             System.out.println("Invalid input");
             return;
